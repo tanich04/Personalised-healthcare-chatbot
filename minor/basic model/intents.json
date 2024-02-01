@@ -1,0 +1,957 @@
+{"intents": [
+  {
+    "tag": "greeting",
+    "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Namaste",
+        "yo"
+    ],
+    "responses": [
+        "Hello",
+        "Good to see you again",
+        "Hi there, how can I help?"
+    ]},
+    {
+      "tag": "goodbye",
+      "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye",
+          "Get lost",
+          "Till next time",
+          "bbye"
+      ],
+      "responses": [
+          "See you!",
+          "Have a nice day",
+          "Bye! Come back again soon."
+      ],
+      "context": [
+          ""
+      ]
+  },
+  {
+    "tag": "thanks",
+    "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+    ],
+    "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+    ],
+    "context": [
+        ""
+    ]
+},
+{
+  "tag": "noanswer",
+  "patterns": [],
+  "responses": [
+      "Sorry, can't understand you",
+      "Please give me more info",
+      "Not sure I understand"
+  ],
+  "context": [
+      ""
+  ]
+},
+{
+  "tag": "options",
+  "patterns": [
+      "How you could help me?",
+      "What you can do?",
+      "What help you provide?",
+      "How you can be helpful?",
+      "What support is offered"
+  ],
+  "responses": [
+      "I am an IIIT-NR institute based chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me about your health related inquires Thank you!! "
+  ],
+  "context": [
+      ""
+  ]
+},
+{
+  "tag": "jokes",
+  "patterns": [
+      "Tell me a joke",
+      "Joke",
+      "Make me laugh"
+  ],
+  "responses": [
+      "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+      "I ate a clock yesterday, it was very time-consuming",
+      "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+      "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+      "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+      "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+      "What do you call a snowman with a suntan? A puddle.",
+      "How does a penguin build a house? Igloos it together",
+      "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+      "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+      "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+  ],
+  "context": [
+      "jokes"
+  ]
+},
+{
+  "tag": "Identity",
+  "patterns": [
+      "Who are you",
+      "what are you"
+  ],
+  "responses": [
+      "I am medheal, an institute based healthcare chatbot"
+  ]
+},
+{
+  "tag": "haha",
+  "patterns": [
+      "haha",
+      "lol",
+      "rofl",
+      "lmao",
+      "thats funny"
+  ],
+  "responses": [
+      "Glad I could make you laugh !"
+  ]
+},
+{
+  "tag": "programmer",
+  "patterns": [
+      "Who made you",
+      "who designed you",
+      "who programmed you"
+  ],
+  "responses": [
+      "I was made by Tanishka and Ojash under the guidance of Santosh sir. "
+  ]
+},
+
+{
+  "tag": "activity",
+  "patterns": [
+      "what are you doing",
+      "what are you upto"
+  ],
+  "responses": [
+      "Talking to you, of course!"
+  ]
+},
+{
+  "tag": "age",
+  "patterns": [
+      "how old are you","when were you made","what is your age"
+  ],
+  "responses": [
+      "I was made in September 2023, if that's what you are asking!"
+  ]
+},
+{
+  "tag": "suggest",
+  "patterns": [
+      "you are useless","useless","suggest","suggestions","you are bad"
+  ],
+  "responses": [
+      "Please mail your suggestions to ojashverma53@gmail.com. Thank you for helping me improve!"
+  ]
+},
+{
+  "tag": "suggest",
+  "patterns": [
+    "you are useless",
+    "useless",
+    "suggest",
+    "suggestions",
+    "you are bad",
+    "improve",
+    "feedback",
+    "recommend",
+    "make better",
+    "enhance",
+    "what can you do better"
+  ],
+  "responses": [
+    "Please mail your suggestions to ojashverma53@gmail.com. Thank you for helping me improve!",
+    "I appreciate your feedback! Feel free to share your suggestions at ojashverma53@gmail.com.",
+    "Your input is valuable! Send your suggestions to ojashverma53@gmail.com for consideration.",
+    "I'm always looking to improve. Share your suggestions with me at ojashverma53@gmail.com.",
+    "Thank you for your feedback! If you have suggestions, please email them to ojashverma53@gmail.com."
+  ]
+},
+{
+  "tag":"common cold symptoms",
+  "patterns": ["Runny or stuffy nose",
+  "Sore throat",
+  "Cough",
+  "Sneezing",
+  "Low-grade fever and blocked nose",
+  "Watery discharge from nose that thickens and turns yellow or green"],
+  "responses":["It seems that you are suffering from common cold"]
+},
+{
+  "tag":"fever symptoms",
+  "patterns":["Sweating",
+  "Chills and shivering",
+  "Headache",
+  "Muscle aches",
+  "Loss of appetite",
+  "Irritability",
+  "Dehydration",
+  "General weakness"],
+  "responses":["It seems that you are suffering from fever"]
+},
+{
+  "tag":"Diabetes symptoms",
+  "patterns":["increased hunger",
+  "increased thirst",
+  "weight loss",
+  "frequent urination",
+  "blurry vision",
+  "extreme fatigue"],
+  "responses":["It seems that you are suffering from Diabetes"]
+},
+{
+  "tag":"Depression symptoms",
+  "patterns":["Hopeless outlook",
+  "Lost interest",
+  "sleep problem",
+  "Anxiety",
+  "Nothing to look forward to",
+  "Looking at death"],
+  "responses":["It seem that you are suffering from depression"]
+},
+{
+  "tag":"Asthma symptoms",
+  "patterns":["severe coughing",
+  "tightness in the chest",
+  "shortness of breath",
+  "difficulty talking",
+  "panic",
+  "fatigue in throat"],
+  "responses":["It seem that you are suffering from Asthma"]
+},
+{
+  "tag":"common cold prevention",
+  "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
+  "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+},
+{
+  "tag":"fever prevention",
+  "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
+  "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+},
+{
+  "tag":"diabetes prevention",
+  "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
+  "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+},
+{
+  "tag":"depression prevention",
+  "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
+  "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+},
+{
+  "tag":"asthma prevention",
+  "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
+  "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+},
+{
+  "tag":"headache symptoms",
+  "patterns":["Pain or pressure in the forehead, temples, or back of the head",
+  "Dull, aching head pain",
+  "Sensitivity to light or noise",
+  "Difficulty concentrating",
+  "Scalp tenderness"],
+  "responses":["It seems that you are experiencing a headache."]
+},
+{
+  "tag":"allergy symptoms",
+  "patterns":["Sneezing",
+  "Itchy, watery eyes",
+  "Itchy throat or ears",
+  "Rashes or hives",
+  "Swelling of the face, lips, or tongue"],
+  "responses":["It seems that you are experiencing allergy symptoms."]
+},
+{
+  "tag":"sunburn symptoms",
+  "patterns":["Redness and swelling of the skin",
+  "Pain or tenderness",
+  "Warmth or heat in the affected area",
+  "Blisters or peeling skin"],
+  "responses":["It seems that you have a sunburn."]
+},
+{
+  "tag":"anxiety symptoms",
+  "patterns":["Excessive worrying",
+  "Restlessness or irritability",
+  "Difficulty concentrating",
+  "Rapid heartbeat or palpitations",
+  "Shortness of breath",
+  "Muscle tension",
+  "Insomnia",
+  "Panic attacks"],
+  "responses":["It seems that you are experiencing symptoms of anxiety."]
+},
+{
+  "tag":"migraine symptoms",
+  "patterns":["Intense, throbbing head pain",
+  "Nausea or vomiting",
+  "Sensitivity to light, sound, or smells",
+  "Blurred vision",
+  "Lightheadedness or fainting",
+  "Tingling or numbness in the face or extremities",
+  "Difficulty speaking"],
+  "responses":["It seems that you are experiencing symptoms of a migraine."]
+},
+{
+  "tag":"heart disease symptoms",
+  "patterns":["Chest pain or discomfort",
+  "Dizziness or lightheadedness",
+  "Swelling in the legs, ankles, or feet",
+  "Irregular heartbeat"],
+  "responses":["It seems that you may be experiencing symptoms of heart disease."]
+},
+{
+  "tag":"insomnia symptoms",
+  "patterns":["Difficulty falling asleep",
+  "Waking up frequently during the night",
+  "Trouble getting back to sleep",
+  "Waking up too early in the morning",
+  "Daytime fatigue or sleepiness",
+  "Irritability, depression, or anxiety",
+  "Difficulty paying attention, focusing on tasks, or remembering"],
+  "responses":["It seems that you are experiencing symptoms of insomnia."]
+},
+{
+  "tag":"COVID-19 symptoms",
+  "patterns":["Fever",
+  "Cough",
+  "Shortness of breath or difficulty breathing",
+  "Fatigue",
+  "Muscle or body aches",
+  "Headache",
+  "New loss of taste or smell",
+  "Sore throat",
+  "Congestion or runny nose",
+  "Nausea or vomiting",
+  "Diarrhea"],
+  "responses":["It is possible that you may have COVID-19 symptoms. It is recommended that you get tested and take appropriate precautions to prevent the spread"]
+  },
+{
+  "tag": "food poisoning symptoms",
+  "patterns": [
+    "Nausea",
+    "Vomiting",
+    "Diarrhea",
+    "Abdominal pain or cramping",
+    "Fever",
+    "Weakness",
+    "Headache"
+  ],
+  "responses": ["It seems that you are experiencing symptoms of food poisoning."]
+},
+{
+"tag": "back pain symptoms",
+"patterns": [
+  "Muscle ache",
+  "Shooting or stabbing pain",
+  "Pain that radiates down your leg",
+  "Limited flexibility or range of motion",
+  "Difficulty standing up straight",
+  "Pain that worsens with bending, lifting, standing, or walking"
+],
+"responses": ["It seems that you are experiencing back pain."]
+},
+{
+  "tag": "sinus infection symptoms",
+  "patterns": [
+    "Pain or pressure in the face",
+    "Nasal congestion or discharge",
+    "Cough",
+    "Sore throat",
+    "Fever",
+    "Fatigue",
+    "Headache",
+    "Difficulty breathing",
+    "Loss of smell",
+    "Watery eyes",
+    "Postnasal drip",
+    "Bad breath",
+    "Ear pain",
+    "Toothache",
+    "Swollen face",
+    "Sneezing",
+    "Sinus pressure",
+    "Sinus headaches",
+    "Facial tenderness",
+    "Worsening symptoms at night",
+    "Thick yellow or green mucus",
+    "Ear fullness or popping",
+    "Jaw pain"
+  ],
+  "responses": [
+    "It seems that you are experiencing symptoms of a sinus infection.",
+    "Sinus infections can also cause difficulty breathing, loss of smell, watery eyes, and postnasal drip.",
+    "In addition to the common symptoms, sinus infections may lead to bad breath, ear pain, and toothache.",
+    "Swollen face, sneezing, and sinus pressure are also possible symptoms of a sinus infection.",
+    "If you experience facial tenderness, worsening symptoms at night, or thick yellow or green mucus, it could be indicative of a sinus infection.",
+    "Other potential symptoms include ear fullness or popping and jaw pain."
+  ]
+},
+{
+"tag": "sinus infection symptoms",
+"patterns": [
+"Pain or pressure in the face",
+"Nasal congestion or discharge",
+"Cough",
+"Sore throat",
+"Fever",
+"Fatigue",
+"Headache"
+],
+"responses": ["It seems that you are experiencing symptoms of a sinus infection."]
+},
+{
+"tag": "pneumonia symptoms",
+"patterns": [
+"Cough",
+"Fever",
+"Chills",
+"Shortness of breath",
+"Chest pain",
+"Fatigue",
+"Nausea or vomiting"
+],
+"responses": ["It seems that you are experiencing symptoms of pneumonia."]
+},
+{
+"tag": "diabetes symptoms",
+"patterns": [
+"Increased thirst",
+"Frequent urination",
+"Blurry vision",
+"Fatigue",
+"Tingling or numbness in hands or feet",
+"Slow-healing wounds",
+"Unexplained weight loss"
+],
+"responses": ["It seems that you are experiencing symptoms of diabetes."]
+},
+{
+"tag": "hypertension symptoms",
+"patterns": [
+"Headaches",
+"Shortness of breath",
+"Chest pain",
+"Vision problems",
+"Fatigue",
+"Nosebleeds",
+"Irregular heartbeat"
+],
+"responses": ["It seems that you are experiencing symptoms of hypertension."]
+},
+{
+"tag": "hepatitis symptoms",
+"patterns": [
+"Abdominal pain or discomfort",
+"Fever",
+"Fatigue",
+"Loss of appetite",
+"Nausea or vomiting",
+"Joint pain",
+"Jaundice"
+],
+"responses": ["It seems that you are experiencing symptoms of hepatitis."]
+},
+{
+  "tag": "Hospitals Nearby",
+  "patterns": [
+    "Can you guide me to nearby hospitals",
+    "What are the medical services nearby",
+    "Any Hospitals nearby",
+    "Hospitals I can visit",
+    "Medical services around so I can get treatment",
+    "Where to get medicines outside",
+    "I cannot find medicines in campus, what do I do",
+    "Emergency medical help",
+    "Nearest healthcare facilities",
+    "Tell me about nearby clinics",
+    "Are there any pharmacies around",
+    "Healthcare options in the vicinity"
+  ],
+  "responses": ["There are two Hospitals nearby. One is Balco Cancer Hospital, address: Balco Medical Centre, Vedanta Medical Research Foundation, Sector 36, Atal Nagar, PO: Uparwara, Raipur, Chhattisgarh 493661. The other hospital is Sadbhavana Hospital."]
+},
+{
+  "tag": "Balco Hospital",
+  "patterns": [
+    "Tell me more about Balco Hospital",
+    "Balco hospital contact information",
+    "Give me Balco website",
+    "Give Balco hospital contact number",
+    "When is Balco hospital open",
+    "What treatment can I get in Balco hospital",
+    "Where is Balco hospital",
+    "Is Balco a good hospital",
+    "What treatment is done in Balco",
+    "Which is a good hospital nearby",
+    "Any specialties in Balco",
+    "Tell me about Balco's medical facilities",
+    "Balco hospital reviews",
+    "Is Balco a government hospital",
+    "How can I schedule an appointment at Balco Hospital?",
+    "Tell me about the technology used in Balco Hospital",
+    "What is the success rate of treatments at Balco Hospital?",
+    "Does Balco Hospital offer telemedicine services?",
+    "Is there a pharmacy within Balco Hospital?",
+    "Are there accommodation facilities for patient families at Balco Hospital?",
+    "Tell me about the social initiatives of Balco Hospital",
+    "Is Balco Hospital involved in medical research?",
+    "What insurance plans does Balco Hospital accept?",
+    "Can I get a virtual tour of Balco Hospital online?",
+    "Is there a helipad for emergency air transport at Balco Hospital?"
+  ],
+  "responses": [
+    "Balco Medical Centre (BMC), a 170 bedded state-of-the-art tertiary care Oncology facility situated in Sector 36, Atal Nagar, PO: Uparwara, Raipur, Chhattisgarh 493661.",
+    "Contact information for Balco hospital is 8282824444, 0771-2237575.",
+    "You can refer to the site https://www.balcomedicalcentre.com/.",
+    "Balco Hospital is open 24/7 and offers various medical treatments, including oncology, surgical procedures, and more.",
+    "Balco Hospital specializes in oncology, cardiology, orthopedics, neurology, and general surgery.",
+    "The hospital is equipped with state-of-the-art medical facilities, including advanced diagnostic imaging, intensive care units, and modern operating theaters.",
+    "Patients have given positive reviews about the quality of care and medical expertise at Balco Hospital.",
+    "Balco Hospital is a private healthcare facility known for its commitment to patient well-being.",
+    "Apart from traditional treatments, Balco Hospital also offers complementary therapies such as physiotherapy and nutrition counseling.",
+    "In addition to being a local favorite, Balco Hospital is recognized as a top-tier healthcare provider in the region.",
+    "Balco Hospital is not a government hospital; it is a private medical facility.",
+    "To schedule an appointment at Balco Hospital, you can call the provided contact numbers or use the online appointment booking system on their website.",
+    "Balco Hospital employs cutting-edge technology, including robotic-assisted surgery and advanced medical imaging.",
+    "The success rate of treatments at Balco Hospital is consistently high, thanks to a skilled medical team and advanced medical technology.",
+    "Yes, Balco Hospital offers telemedicine services for remote consultations with healthcare professionals.",
+    "Balco Hospital has an in-house pharmacy that provides medications prescribed by the hospital's medical staff.",
+    "For the convenience of patient families, Balco Hospital offers accommodation facilities within the hospital premises.",
+    "Balco Hospital actively participates in various social initiatives, including health awareness programs and community health camps.",
+    "Yes, Balco Hospital is involved in medical research, contributing to advancements in healthcare.",
+    "Balco Hospital accepts a wide range of insurance plans. Check with the billing department for specific details.",
+    "While there isn't a virtual tour available online, you can contact the hospital to inquire about guided tours or information sessions.",
+    "Yes, Balco Hospital has a helipad for emergency air transport to ensure swift medical assistance during critical situations."
+  ]
+},
+{
+  "tag": "Balco Hospital Contact Information",
+  "patterns": [
+    "Balco hospital contact information",
+    "Give Balco hospital contact number"
+  ],
+  "responses": [
+    "Contact information for Balco hospital is 8282824444, 0771-2237575."
+  ]
+},
+{
+  "tag": "Balco Hospital Reviews",
+  "patterns": [
+    "Balco hospital reviews"
+  ],
+  "responses": [
+    "Patients have given positive reviews about the quality of care and medical expertise at Balco Hospital."
+  ]
+},
+{
+  "tag": "Balco Hospital Information",
+  "patterns": [
+    "Tell me more about Balco Hospital",
+    "Give me Balco website",
+    "What treatment can I get in Balco hospital",
+    "Where is Balco hospital",
+    "Is Balco a good hospital",
+    "What treatment is done in Balco",
+    "Any specialties in Balco",
+    "Tell me about Balco's medical facilities",
+    "Is Balco a government hospital"
+  ],
+  "responses": [
+    "Balco Medical Centre (BMC), a 170 bedded state-of-the-art tertiary care Oncology facility situated in Sector 36, Atal Nagar, PO: Uparwara, Raipur, Chhattisgarh 493661.",
+    "You can refer to the site https://www.balcomedicalcentre.com/.",
+    "Balco Hospital is open 24/7 and offers various medical treatments, including oncology, surgical procedures, and more.",
+    "Balco Hospital specializes in oncology, cardiology, orthopedics, neurology, and general surgery.",
+    "The hospital is equipped with state-of-the-art medical facilities, including advanced diagnostic imaging, intensive care units, and modern operating theaters.",
+    "Balco Hospital is not a government hospital; it is a private medical facility."
+  ]
+},
+{
+  "tag": "Balco Hospital",
+  "patterns": [
+    "Tell me more about Balco Hospital",
+    "Balco hospital contact information",
+    "Give me Balco website",
+    "Give Balco hospital contact number",
+    "When is Balco hospital open",
+    "What treatment can I get in Balco hospital",
+    "Where is Balco hospital",
+    "Is Balco a good hospital",
+    "What treatment is done in Balco",
+    "Which is a good hospital nearby",
+    "Any specialties in Balco",
+    "Tell me about Balco's medical facilities",
+    "Balco hospital reviews",
+    "Is Balco a government hospital"
+  ],
+  "responses": [
+    "Balco Medical Centre (BMC), a 170 bedded state-of-the-art tertiary care Oncology facility situated in Sector 36, Atal Nagar, PO: Uparwara, Raipur, Chhattisgarh 493661.",
+    "Contact information for Balco hospital is 8282824444, 0771-2237575.",
+    "You can refer to the site https://www.balcomedicalcentre.com/.",
+    "Balco Hospital is open 24/7 and offers various medical treatments including oncology, surgical procedures, and more."
+  ]
+},
+{
+  "tag": "food poisoning symptoms and cause",
+  "patterns": [
+    "Nausea",
+    "I am experiencing food poisoning",
+    "How to cure food poisoning",
+    "Stomach pain",
+    "How to prevent food poisoning",
+    "How to cure Vomiting",
+    "How to cure Diarrhea",
+    "How to cure Abdominal pain or cramping",
+    "Food poisoning remedies",
+    "What to eat after food poisoning",
+    "How long does food poisoning last",
+    "Medical advice for food poisoning"
+  ],
+  "responses": [
+    "It seems that you are experiencing symptoms of food poisoning, which may be due to bad mess food or something in the canteen. You should eat curd and drink lots of water.",
+    "These seem to be symptoms of food poisoning. Refer to a doctor nearby if severe symptoms. Otherwise, home remedies include drinking lots of water and taking rest.",
+    "If your symptoms persist, it's advisable to consult a healthcare professional for proper diagnosis and treatment."
+  ]
+},
+{
+  "tag": "Sadbhavna",
+  "patterns": [
+    "Give me contact information for Sadbhavna Hospital",
+    "Tell me more about Sadbhavna Hospital",
+    "Where is Sadbhavna Hospital",
+    "Give the address of Sadbhavna Hospital",
+    "Sadbhavna Hospital number",
+    "Sadbhavna Hospital website",
+    "What are the timings for Sadbhavna Hospital",
+    "Tell me about Sadbhavna's specialties",
+    "Sadbhavna Hospital reviews",
+    "Emergency services at Sadbhavna Hospital",
+    "Is Sadbhavna Hospital open on weekends?",
+    "Are there any discounts for medical services at Sadbhavna?",
+    "How can I book an appointment at Sadbhavna Hospital?",
+    "Tell me about Sadbhavna's medical staff",
+    "Is there parking available at Sadbhavna Hospital?",
+    "What insurance does Sadbhavna Hospital accept?",
+    "Can I get lab tests done at Sadbhavna Hospital?",
+    "Is Sadbhavna Hospital affiliated with any medical schools?",
+    "Tell me about Sadbhavna's commitment to patient care",
+    "What preventive care services does Sadbhavna offer?",
+    "Are there any support groups at Sadbhavna for patients and their families?"
+  ],
+  "responses": [
+    "Sadbhavna Hospital is located in Plot C/1 Sector 30, Sector 30, NAYA RAIPUR, Naya Raipur - 492101 (Near Amity International School).",
+    "You can call the hospital at 9301917278 or visit their website https://sadbhavnahospitals.in/.",
+    "Sadbhavna Hospital offers a range of medical services, including emergency care, surgeries, and specialized treatments.",
+    "The hospital operates from 8:00 AM to 8:00 PM on weekdays and has reduced hours on weekends.",
+    "Sadbhavna Hospital has received positive reviews for its compassionate care and skilled medical staff.",
+    "For emergency services at Sadbhavna Hospital, please call the emergency helpline at [emergency number].",
+    "Sadbhavna Hospital is committed to providing quality healthcare and offers a variety of specialties, including cardiology, orthopedics, and pediatrics.",
+    "Patients at Sadbhavna Hospital benefit from a dedicated team of doctors, nurses, and support staff who prioritize patient well-being.",
+    "Sadbhavna Hospital has a convenient online appointment booking system. Visit their website or call to schedule an appointment.",
+    "The hospital accepts a range of insurance plans. Check with the billing department for details on accepted insurance providers.",
+    "Lab tests can be conducted at Sadbhavna Hospital's diagnostic center, providing comprehensive testing services.",
+    "Sadbhavna Hospital is affiliated with reputable medical schools, contributing to medical education and research.",
+    "Parking facilities are available at Sadbhavna Hospital for the convenience of patients and visitors.",
+    "The hospital is actively involved in community outreach and preventive care programs to promote overall health and well-being.",
+    "Sadbhavna Hospital provides support groups for patients and their families, fostering a supportive community."
+  ]
+},
+{
+  "tag": "Sadbhavna",
+  "patterns": [
+    "Give me contact information for Sadbhavna Hospital",
+    "Tell me more about Sadbhavna Hospital",
+    "Where is Sadbhavna Hospital",
+    "Give the address of Sadbhavna Hospital",
+    "Sadbhavna Hospital number",
+    "Sadbhavna Hospital website",
+    "What are the timings for Sadbhavna Hospital",
+    "Tell me about Sadbhavna's specialties",
+    "Sadbhavna Hospital reviews",
+    "Emergency services at Sadbhavna Hospital"
+  ],
+  "responses": [
+    "Sadbhavna Hospital is located in Plot C/1 Sector 30, Sector 30, NAYA RAIPUR, Naya Raipur - 492101 (Near Amity International School).",
+    "You can call the hospital at 9301917278 or visit their website https://sadbhavnahospitals.in/.",
+    "Sadbhavna Hospital offers a range of medical services, including emergency care, surgeries, and specialized treatments."
+  ]
+},
+{
+  "tag":"anxiety state",
+  "patterns":[
+    "Worry",
+    "Feeling suicidal",
+    "Suicidal thoughts",
+    "Sleeplessness",
+    "Feeling hopeless",
+    "Irritable mood",
+    "Tremor",
+    "Blackout",
+    "Weepiness",
+    "Has religious beliefs",
+    "Nervousness",
+    "Visual hallucinations",
+    "Formication",
+    "Difficulty concentrating",
+    "Chest pain",
+    "Patient non-compliance",
+    "Agitation",
+    "Palpitation",
+    "Auditory hallucinations",
+    "Depressed mood",
+    "Hot flush",
+    "Pain",
+    "Clear consciousness",
+    "Nightmare",
+    "Dealing with anxiety",
+    "Coping with stress",
+    "Mental health support",
+    "Emergency mental health helpline"
+  ],
+  "responses":[
+    "It looks like you may be experiencing symptoms of anxiety. Please call an emergency suicidal helpline or visit nearby hospitals to get a proper assessment and prescription.",
+    "If you are in immediate distress, reach out to a mental health professional or a helpline for support."
+  ]
+},
+{
+  "tag": "balco doctors list",
+  "patterns": [
+    "Which doctors are present in Balco Hospital",
+    "Give a list of doctors present in Balco",
+    "List of doctors in Balco",
+    "Who will treat me in Balco Hospital",
+    "Which specializations are present in Balco Hospital",
+    "Balco Hospital doctors and their specialties",
+    "Balco Hospital medical staff",
+    "Balco Hospital physician information"
+  ],
+  "responses": [
+    "You can check the Balco website for more information about the doctors present.",
+    "The following doctors and their specializations are mentioned: 1. Dr. Bhawana Sirohi specialized in Medical Oncology 2. Dr. Alok Kumar Swain specialized in Pain and Palliative Care 3. Dr. Mou Roy specialized in Surgical Oncology."
+  ]
+},
+{
+  "tag": "in campus medical facility",
+  "patterns": [
+    "Where can I get medicines inside campus",
+    "Is there a doctor inside campus",
+    "Is there a medical facility inside campus",
+    "Can I see a doctor nearby",
+    "What are the facilities provided by the institute",
+    "Can I get an ambulance",
+    "When is the medical facility inside campus open",
+    "Contact number for in-campus medical facility",
+    "Emergency medical services in the campus",
+    "On-campus healthcare",
+    "Availability of first aid in campus",
+    "Medical assistance in hostels"
+  ],
+  "responses": [
+    "There is a medical facility available inside campus located in the incubation near B-mart. The doctor is available from 9 am to 11 am, and your hostel caretaker can provide an ambulance in case of emergencies.",
+    "For immediate medical attention, contact the in-campus medical facility at [contact number]. They provide essential healthcare services and can guide you on further steps."
+  ]
+},
+{
+  "tag": "in campus medical facility",
+  "patterns": [
+    "Where can I get medicines inside campus",
+    "Is there a doctor inside campus",
+    "Is there a medical facility inside campus",
+    "Can I see a doctor nearby",
+    "What are the facilities provided by the institute",
+    "Can I get an ambulance",
+    "When is the medical facility inside campus open",
+    "Contact number for in-campus medical facility",
+    "Emergency medical services in the campus",
+    "On-campus healthcare",
+    "Availability of first aid in campus",
+    "Medical assistance in hostels",
+    "Are there any health and wellness programs on campus?",
+    "Tell me about mental health services on campus",
+    "Is there a pharmacy on campus?",
+    "Do they provide vaccinations at the in-campus medical facility?",
+    "Tell me about the expertise of the doctors in the in-campus medical facility",
+    "Is there a women's health clinic on campus?",
+    "Are there any health insurance options available for students?",
+    "What types of medical tests can be done at the in-campus facility?",
+    "Tell me about the hygiene standards at the in-campus medical facility",
+    "Can I schedule a routine check-up at the in-campus facility?",
+    "Is there a dental clinic on campus?",
+    "Tell me about the health and safety guidelines on campus",
+    "Is there a dedicated hotline for medical emergencies on campus?",
+    "Do they offer counseling services at the in-campus medical facility?",
+    "Tell me about the physical therapy services on campus",
+    "Is there a mobile app for accessing medical services on campus?",
+    "Are there any wellness workshops or seminars organized by the in-campus medical facility?"
+  ],
+  "responses": [
+    "There is a medical facility available inside campus located in the incubation near B-mart. The doctor is available from 9 am to 11 am, and your hostel caretaker can provide an ambulance in case of emergencies.",
+    "For immediate medical attention, contact the in-campus medical facility at [contact number]. They provide essential healthcare services and can guide you on further steps.",
+    "The institute provides a range of healthcare facilities, including the in-campus medical facility, to support the health and well-being of students.",
+    "In case of an emergency, the campus medical facility can dispatch an ambulance to your location. Dial [emergency number] for assistance.",
+    "The medical facility inside the campus is open [hours of operation]. They offer a variety of services, including first aid, routine check-ups, and consultations.",
+    "Students can access medical assistance in their hostels by contacting their hostel caretaker or the in-campus medical facility.",
+    "The campus medical facility organizes health and wellness programs to promote a healthy lifestyle among students.",
+    "Mental health services are available on campus. You can schedule a counseling session at the in-campus medical facility.",
+    "The in-campus medical facility provides access to essential medications through an on-site pharmacy.",
+    "Yes, vaccinations are available at the in-campus medical facility to ensure the health and safety of students.",
+    "The doctors in the in-campus medical facility are experienced and specialize in various fields, ensuring comprehensive healthcare for students.",
+    "The campus medical facility is equipped to handle women's health concerns with a dedicated clinic and qualified medical professionals.",
+    "Students can explore health insurance options provided by the institute to ensure comprehensive coverage for medical expenses.",
+    "Various medical tests, including diagnostic screenings, can be conducted at the in-campus medical facility.",
+    "The in-campus medical facility adheres to high hygiene standards to provide a safe and clean environment for students.",
+    "Yes, routine check-ups can be scheduled at the in-campus medical facility for proactive health management.",
+    "A dental clinic is available on campus to address oral health needs. Students can schedule appointments for dental check-ups and treatments.",
+    "The institute follows health and safety guidelines to create a secure environment for students, staff, and faculty.",
+    "For medical emergencies on campus, a dedicated hotline is available to ensure quick response and assistance.",
+    "Counseling services are offered at the in-campus medical facility to support the mental health and well-being of students.",
+    "Physical therapy services are available on campus to address musculoskeletal concerns and promote physical well-being.",
+    "Yes, there is a mobile app that students can use to access medical services, schedule appointments, and receive health-related information.",
+    "The in-campus medical facility conducts wellness workshops and seminars to educate and engage students in maintaining a healthy lifestyle."
+  ]
+},
+{
+  "tag": "Hospitals Nearby",
+  "patterns": [
+  "Can you guide me to nearby hospitals",
+  "What are the medical services nearby",
+  "Any Hospitals nearby",
+  "Hospitals i can visit",
+  "Medical sercives around so i can get treatment",
+  "Where to get medicines outside",
+  "I cannot find medicines in campus what do i do"
+  ],
+  "responses": ["There are two Hospitals nearby one is Balco cancer hospital address: Balco Medical Centre, Vedanta Medical Research Foundation, Sector 36, Atal Nagar, PO: Uparwara, Raipur, Chhattisgarh 493661 And another hospital is Sadbhavana hospital"]
+  },
+  {
+    "tag": "Balco Hospital",
+    "patterns": [
+      "Tell me more about Balco Hospital",
+      "balco hospital contact information",
+      "give me balco website",
+      "give balco hospital contact number",
+      "When is balco hospital open",
+      "What treatment can i get in balco hospital",
+      "Where is balco hospital",
+      "Is balco a good hospital",
+      "What treatment is done in balco",
+      "Which is a good hospital nearby"
+      
+    ],
+    "responses": ["Balco Medical Centre (BMC), a 170 bedded state-of-the-art tertiary care Oncology facility situated in Sector 36, Atal Nagar, PO: Uparwara, Raipur, Chhattisgarh 493661","Contact information for Balco hospital is 8282824444,0771-2237575","You can refer to the site https://www.balcomedicalcentre.com/"
+  ]
+  },
+{
+  "tag": "food poisoning symptoms and cause",
+  "patterns": [
+    "Nausea",
+    "i am experiencing food poisoning",
+    "how to cure food poisoning",
+    "Stomach pain",
+    "how to prevent food poisoning",
+    "how to cure Vomiting",
+    "how to cure Diarrhea",
+    "how to cure Abdominal pain or cramping"
+    
+  ],
+  "responses": ["It seems that you are experiencing symptoms of food poisoning which may be due to bad mess food or something in the canteen you should eat curd and drink lots od water","These seem to be symtoms of food posisoning refer a doctor nearby if severe symtoms otherwise home remidies include drinking lots of water and take rest"
+]
+},
+{
+  "tag": "Sadbhavna",
+  "patterns": [
+  "Give me contact information for sadbhavna hospital",
+  "tell me more about sadbhavna hospital",
+  "where is sadbhavna hospital",
+  "give address of sadbhavna hospital",
+  "sadbhavna hospital number",
+  "sadbhavna hospital website",
+  "what are the timings for sadbhavna hospital"
+  ],
+  "responses": ["Sadbhavna Hospital is located in Plot C/1 Sector 30, Sector 30, NAYA RAIPUR, Naya Raipur - 492101 (Near Amity International School)","You can call the hospital at 9301917278 or visit their website https://sadbhavnahospitals.in/"]
+  },
+  {
+    "tag":"anxiety state",
+    "patterns":[
+        "worry",
+        "feeling suicidal",
+        "suicidal",
+        "sleeplessness",
+        "feeling hopeless",
+        "irritable mood",
+        "tremor",
+        "blackout",
+        "weepiness",
+        "has religious belief",
+        "nervousness",
+        "hallucinations visual",
+        "formication",
+        "difficulty",
+        "pain chest",
+        "patient non compliance",
+        "agitation",
+        "palpitation",
+        "hallucinations auditory",
+        "mood depressed",
+        "hot flush",
+        "pain",
+        "consciousness clear",
+        "nightmare"
+    ],
+    "responses":[
+        "It looks like you may have anxiety state please call emergency suicidal helpline or visit nearby hospitals to get a prescription"
+    ]
+  },
+  {
+    "tag": "balco doctors list",
+    "patterns": [
+    "which doctors are present in balco hospital",
+    "give a list of doctors present in balco",
+    "list of doctors in balco",
+    "who will treat me in balco hospital",
+    "which specialisations are present inn balco hospital"
+    ],
+    "responses": ["You can check the balco website for more information about the doctors present",
+  "The following doctors and theirs specialisations are mentioned:-   1. Dr bhawana sirohi specialised in medical oncology  2. Dr Alok kumar swain specialised in pain and palliative care  3. Dr Mou roy specialised in surgical oncology"]
+    },
+         {
+          "tag": "in campus medical facility",
+          "patterns": [
+          "where can i get medicines inside campus",
+          "is there a doctor inside campus",
+          "is there a medical facility inside campus",
+          "can i see a doctor nearby",
+          "what are the facilities provided by the isntitute",
+          "can i get an ambulance",
+          "when is the medical facility inside campus open",
+          "contact number for incampus medical facility"
+          ],
+          "responses": ["There is a medical facility avaliable inside campus located in the incubation near B-mart the doctor is avaliable from 9am to 11am and your hostel caretaker can provide for an ambulance in case of emergencies"]
+          }    
+]
+}
